@@ -1,9 +1,10 @@
 'use client';
+import { BlackBackground } from '@/components/BlackBackground';
 import { useEffect } from "react";
 import Link from "next/link";
-import gsap from 'gsap'; // <-- import GSAP
+import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-gsap.registerPlugin(useGSAP);
+
 
 export default function SimpleHome() {
     useGSAP(() => {
@@ -11,14 +12,16 @@ export default function SimpleHome() {
     }, []);
 
     return (
-        <main className="h-screen flex flex-col justify-center items-center text-center">
-            <h1 className="fade text-4xl font-bold>">Nathan Thompson</h1>
-            <p className="fade mt-3 text-grey-600">Hi, I&#39;m Nathan</p>
-            <p className="fade mt-1 text-sm">Proficient in Java, Springboot, React, SQL</p>
+        <BlackBackground>
+            <main className="h-screen flex flex-col justify-center items-center text-center">
+                <h1 className="fade text-5xl font-bold>">Nathan Thompson</h1>
+                <p className="fade text-3xl mt-7 text-grey-600">Hi, I&#39;m Nathan</p>
+                <p className="fade  mt-3 text-2xl">Proficient in Java, Springboot, React, SQL</p>
 
-            <div className="fade mt-8">
-                <p>Enter my full portfolio!</p>
-            </div>
-        </main>
+                <div className="fade mt-8">
+                    <p>Enter my full portfolio!</p>
+                </div>
+            </main>
+        </BlackBackground>
     )
 }
