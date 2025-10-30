@@ -32,7 +32,7 @@ export default function Avatar({ src, size = 80, border = false, alt = "Avatar" 
             <BorderFrame
                 className="flex-shrink-0"
                 radiusClassName="rounded-full"
-                padding={3}
+                padding={2}
             >
                 {avatarImage}
             </BorderFrame>

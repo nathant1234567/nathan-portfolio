@@ -5,6 +5,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import Avatar from "@/components/ui/Avatar";
+import SkillRotator from "@/components/ui/SkillsRotator";
 
 export default function Heading() {
     useGSAP(() => {
@@ -43,7 +44,7 @@ export default function Heading() {
                     <Avatar src="/TempAvatar.png" size={100} border={true} />
                 </div>
                 <p className="fade text-3xl mt-7 text-grey-600">Second year student at the University of Kent</p>
-                <p className="fade  mt-3 text-2xl">Proficient in Java, Springboot, React, SQL</p>
+                <SkillRotator/>
             </SectionWrapper>
 
     )

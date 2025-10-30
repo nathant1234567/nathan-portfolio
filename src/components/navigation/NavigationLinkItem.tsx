@@ -10,12 +10,7 @@ interface NavigationLinkItemProps {
     onResetHover: () => void;
 }
 
-export default function NavigationLinkItem({
-                                               link,
-                                               isActive,
-                                               onHover,
-                                               onResetHover,
-                                           }: NavigationLinkItemProps) {
+export default function NavigationLinkItem({link, isActive, onHover, onResetHover,}: NavigationLinkItemProps) {
     return (
         <Link
             href={link.href}
@@ -29,9 +24,7 @@ export default function NavigationLinkItem({
             onMouseLeave={onResetHover}
         >
             <span className="text-sm font-semibold tracking-wide">{link.label}</span>
-            <span className="text-lg opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-        →
-      </span>
+            <span className="text-lg opacity-0 transition-opacity duration-200 group-hover:opacity-100">→</span>
             {isActive && (
                 <motion.span
                     layoutId="active-glow"

@@ -9,7 +9,7 @@ export const pageLinkData: PageLinkEntry[] = [
   {
     label: "Home",
     href: "/",
-    description: "Return to home.",
+    description: "Main page of my website (obviously).",
   },
   {
     label: "Projects",

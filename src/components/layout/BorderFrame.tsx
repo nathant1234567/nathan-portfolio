@@ -22,11 +22,7 @@ export function BorderFrame({
                                 style,
                             }: BorderFrameProps) {
     const resolvedPadding =
-        padding === undefined
-            ? undefined
-            : typeof padding === 'number'
-                ? `${padding}px`
-                : padding;
+        padding === undefined ? undefined : typeof padding === 'number' ? `${padding}px` : padding;
 
     const containerStyle: CSSProperties = {
         ...(resolvedPadding ? { padding: resolvedPadding } : {}),
