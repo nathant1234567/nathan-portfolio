@@ -14,7 +14,13 @@
   --color-nice-black: #172121;
 }
 
+html {
+  scrollbar-width: none;
+}
 
+html::-webkit-scrollbar {
+  display: none;
+}
 
 /*@media (prefers-color-scheme: dark) {*/
 /*  :root {*/
