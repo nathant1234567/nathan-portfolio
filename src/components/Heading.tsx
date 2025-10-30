@@ -35,7 +35,7 @@ export default function Heading() {
 
     return (
             <SectionWrapper className="pt-40">
-                <div className="flex items-center gap-13">
+                <div className="flex items-baseline gap-13">
                     <h1 className="fade text-5xl font-bold cursor-pointer">
                         Hey, I’m <span onMouseEnter={handleMouseEnter}
                                        onMouseLeave={handleMouseLeave} ref={headingRef} className="inline-block">Nathan</span>

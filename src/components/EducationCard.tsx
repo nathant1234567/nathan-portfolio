@@ -33,18 +33,19 @@ export default function EducationCard({ school, degree, period, description }: E
             <AnimatePresence initial={false}>
                 {isOpen && (
                     <motion.div
+                        className="overflow-hidden"
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: 'auto', opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        >
-                            <div className="px-18 pb-6">
-                                <p className="text-grey-300 text-lg">{degree}</p>
-                                {description && (
-                                    <p className="text-grey-400 mt-2">{description}</p>
-                                )}
-                            </div>
-                        </motion.div>
+                    >
+                        <div className="px-18 pb-6">
+                            <p className="text-grey-300 text-lg">{degree}</p>
+                            {description && (
+                                <p className="text-grey-400 mt-2">{description}</p>
+                            )}
+                        </div>
+                    </motion.div>
                 )}
             </AnimatePresence>
         </div>
