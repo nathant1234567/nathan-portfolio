@@ -1,10 +1,10 @@
-import ButtonLink from "@/components/ButtonLink";
-import Heading from "../components/Heading";
-import Socials from "../components/Socials";
-import Education from "@/components/Education";
-import {BlackBackground} from "@/components/BlackBackground";
-import PageWrapper from "@/components/PageWrapper";
-import NavigationPane from "@/components/NavigationPane";
+import ButtonLink from "@/components/ui/ButtonLink";
+import Heading from "../components/ui/Heading";
+import Socials from "../components/ui/Socials";
+import Education from "@/components/ui/Education";
+import {BlackBackground} from "@/components/layout/BlackBackground";
+import PageWrapper from "@/components/layout/PageWrapper";
+import NavigationPane from "@/components/navigation/NavigationPane";
 
 
 export default function Home() {

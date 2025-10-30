@@ -1,10 +1,10 @@
 'use client';
-import { BlackBackground } from '@/components/BlackBackground';
+import { BlackBackground } from '@/components/layout/BlackBackground';
 import { useEffect, useRef } from "react";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-import SectionWrapper from "@/components/SectionWrapper";
-import Avatar from "@/components/Avatar";
+import SectionWrapper from "@/components/layout/SectionWrapper";
+import Avatar from "@/components/ui/Avatar";
 
 export default function Heading() {
     useGSAP(() => {

@@ -3,9 +3,9 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
 
-import NavigationHeader from "@/components/NavigationHeader";
-import NavigationLinkList from "@/components/NavigationLinkList";
-import NavigationPreview from "@/components/NavigationPreview";
+import NavigationHeader from "@/components/navigation/NavigationHeader";
+import NavigationLinkList from "@/components/navigation/NavigationLinkList";
+import NavigationPreview from "@/components/navigation/NavigationPreview";
 import { pageLinkData, type PageLinkEntry } from "@/data/pagelinks";
 
 const links = pageLinkData;

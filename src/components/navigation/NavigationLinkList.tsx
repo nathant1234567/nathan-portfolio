@@ -1,5 +1,5 @@
 import type { PageLinkEntry } from "@/data/pagelinks";
-import NavigationLinkItem from "@/components/NavigationLinkItem";
+import NavigationLinkItem from "@/components/navigation/NavigationLinkItem";
 
 interface NavigationLinkListProps {
   links: PageLinkEntry[];

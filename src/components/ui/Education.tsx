@@ -1,6 +1,6 @@
 'use client';
-import EducationCard from "@/components/EducationCard";
-import SectionWrapper from "@/components/SectionWrapper";
+import EducationCard from "@/components/ui/EducationCard";
+import SectionWrapper from "@/components/layout/SectionWrapper";
 import { educationData } from '@/data/education';
 
 

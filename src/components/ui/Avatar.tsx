@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import { BorderFrame } from "@/components/BorderFrame";
+import { BorderFrame } from "@/components/layout/BorderFrame";
 
 interface AvatarProps {
     src: string;

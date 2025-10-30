@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import PageWrapper from "@/components/PageWrapper";
+import PageWrapper from "@/components/layout/PageWrapper";
 
 export default function ConditionalPageWrapper({ children }: { children: React.ReactNode }) {
     const pathname = usePathname();

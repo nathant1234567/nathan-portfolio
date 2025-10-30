@@ -1,6 +1,6 @@
 'use client';
-import SectionWrapper from "@/components/SectionWrapper";
-import SocialBox from "@/components/SocialBox";
+import SectionWrapper from "@/components/layout/SectionWrapper";
+import SocialBox from "@/components/ui/SocialBox";
 
 export default function SocialsSection() {
     return (

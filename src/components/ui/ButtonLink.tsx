@@ -1,5 +1,5 @@
 import Link from "next/link";
-import SectionWrapper from "@/components/SectionWrapper";
+import SectionWrapper from "@/components/layout/SectionWrapper";
 
 interface ButtonLinkProps {
   href: string;

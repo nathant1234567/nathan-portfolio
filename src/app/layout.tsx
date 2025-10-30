@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import ConditionalPageWrapper from "@/components/ConditionalPageWrapper";
-import {BlackBackground} from "@/components/BlackBackground";
+import ConditionalPageWrapper from "@/components/wrappers/ConditionalPageWrapper";
+import {BlackBackground} from "@/components/layout/BlackBackground";
 
 
 const noto = localFont({
