@@ -4,15 +4,13 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import SectionWrapper from "@/components/SectionWrapper";
 
 
 export default function SimpleHome() {
     useGSAP(() => {
         gsap.from('.fade', { opacity: 0 , y : 30, duration: 1, stagger: 0.2});
     }, []);
-
-
-
     const headingRef = useRef<HTMLHeadingElement>(null)
 
     const handleMouseEnter = () => {
@@ -38,22 +36,19 @@ export default function SimpleHome() {
     };
 
     return (
-        <BlackBackground>
-            <main className="h-screen flex flex-col justify-center items-center text-center">
-                <h1 ref={headingRef}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    className="fade text-5xl font-bold cursor-pointer"
-                >
-                    Hey, I’m Nathan
+
+            <SectionWrapper className="pt-40">
+                <h1 className="fade text-5xl font-bold cursor-pointer">
+                    Hey, I’m <span onMouseEnter={handleMouseEnter}
+                                   onMouseLeave={handleMouseLeave} ref={headingRef} className="inline-block">Nathan</span>
                 </h1>
                 <p className="fade text-3xl mt-7 text-grey-600">Second year student at the University of Kent</p>
                 <p className="fade  mt-3 text-2xl">Proficient in Java, Springboot, React, SQL</p>
 
-                <div className="fade mt-8">
-                    <p>Enter my full portfolio!</p>
-                </div>
-            </main>
-        </BlackBackground>
+                {/*<div className="fade mt-8">*/}
+                {/*    <p>Enter my full portfolio!</p>*/}
+                {/*</div>*/}
+            </SectionWrapper>
+
     )
 }
