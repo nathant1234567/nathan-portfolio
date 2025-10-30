@@ -6,7 +6,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import SectionWrapper from "@/components/SectionWrapper";
 
-export default function SimpleHome() {
+export default function Heading() {
     useGSAP(() => {
         gsap.from('.fade', { opacity: 0 , y : 30, duration: 1, stagger: 0.2});
     }, []);
