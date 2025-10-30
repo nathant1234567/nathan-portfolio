@@ -35,11 +35,13 @@ export default function Heading() {
 
     return (
             <SectionWrapper className="pt-40">
-                <h1 className="fade text-5xl font-bold cursor-pointer">
-                    Hey, I’m <span onMouseEnter={handleMouseEnter}
-                                   onMouseLeave={handleMouseLeave} ref={headingRef} className="inline-block">Nathan</span>
-                </h1>
-                <Avatar src="/TempAvatar.png" size={100} border={true} />
+                <div className="flex items-center gap-13">
+                    <h1 className="fade text-5xl font-bold cursor-pointer">
+                        Hey, I’m <span onMouseEnter={handleMouseEnter}
+                                       onMouseLeave={handleMouseLeave} ref={headingRef} className="inline-block">Nathan</span>
+                    </h1>
+                    <Avatar src="/TempAvatar.png" size={100} border={true} />
+                </div>
                 <p className="fade text-3xl mt-7 text-grey-600">Second year student at the University of Kent</p>
                 <p className="fade  mt-3 text-2xl">Proficient in Java, Springboot, React, SQL</p>
             </SectionWrapper>
