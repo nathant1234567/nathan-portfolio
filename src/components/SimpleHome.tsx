@@ -6,7 +6,6 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import SectionWrapper from "@/components/SectionWrapper";
 
-
 export default function SimpleHome() {
     useGSAP(() => {
         gsap.from('.fade', { opacity: 0 , y : 30, duration: 1, stagger: 0.2});
@@ -45,9 +44,7 @@ export default function SimpleHome() {
                 <p className="fade text-3xl mt-7 text-grey-600">Second year student at the University of Kent</p>
                 <p className="fade  mt-3 text-2xl">Proficient in Java, Springboot, React, SQL</p>
 
-                {/*<div className="fade mt-8">*/}
-                {/*    <p>Enter my full portfolio!</p>*/}
-                {/*</div>*/}
+
             </SectionWrapper>
 
     )

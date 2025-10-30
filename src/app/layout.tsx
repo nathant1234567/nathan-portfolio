@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import ConditionalPageWrapper from "@/components/ConditionalPageWrapper";
+import {BlackBackground} from "@/components/BlackBackground";
+
 
 const noto = localFont({
     src: "../assets/fonts/NotoSans-VariableFont_wdth,wght.ttf",
@@ -15,10 +18,11 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
+
   return (
       <html lang="en" className={noto.variable}>
       <body className="font-[var(--font-noto-sans)] bg-black text-white">
-        {children}
+      <BlackBackground><ConditionalPageWrapper>{children}</ConditionalPageWrapper></BlackBackground>
       </body>
     </html>
   );
