@@ -4,8 +4,8 @@ import Image from "next/image";
 
 interface AvatarProps {
     src: string;
-    size?: number;     // default size if not specified
-    border?: boolean;  // optional border
+    size?: number;
+    border?: boolean;
     alt?: string;
 }
 

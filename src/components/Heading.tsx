@@ -1,7 +1,6 @@
 'use client';
 import { BlackBackground } from '@/components/BlackBackground';
 import { useEffect, useRef } from "react";
-import Link from "next/link";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import SectionWrapper from "@/components/SectionWrapper";
@@ -40,6 +39,7 @@ export default function Heading() {
                     Hey, I’m <span onMouseEnter={handleMouseEnter}
                                    onMouseLeave={handleMouseLeave} ref={headingRef} className="inline-block">Nathan</span>
                 </h1>
+                <Avatar src="/TempAvatar.png" size={100} border={true} />
                 <p className="fade text-3xl mt-7 text-grey-600">Second year student at the University of Kent</p>
                 <p className="fade  mt-3 text-2xl">Proficient in Java, Springboot, React, SQL</p>
             </SectionWrapper>
