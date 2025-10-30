@@ -5,6 +5,7 @@ import Link from "next/link";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import SectionWrapper from "@/components/SectionWrapper";
+import Avatar from "@/components/Avatar";
 
 export default function Heading() {
     useGSAP(() => {
