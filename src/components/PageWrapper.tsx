@@ -13,7 +13,6 @@ export default function PageWrapper({ children }: { children: React.ReactNode })
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.98, y: -30 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-
             >
                 {children}
             </motion.div>

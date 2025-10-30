@@ -28,14 +28,12 @@ export default function Heading() {
         });
     };
 
-
     const handleMouseLeave = () => {
         gsap.killTweensOf(headingRef.current);
         gsap.to(headingRef.current, { color: "#F1E6E4", duration: 0.5 });
     };
 
     return (
-
             <SectionWrapper className="pt-40">
                 <h1 className="fade text-5xl font-bold cursor-pointer">
                     Hey, I’m <span onMouseEnter={handleMouseEnter}
@@ -43,8 +41,6 @@ export default function Heading() {
                 </h1>
                 <p className="fade text-3xl mt-7 text-grey-600">Second year student at the University of Kent</p>
                 <p className="fade  mt-3 text-2xl">Proficient in Java, Springboot, React, SQL</p>
-
-
             </SectionWrapper>
 
     )

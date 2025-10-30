@@ -16,7 +16,7 @@ export const educationData: EducationEntry[] = [
     {
         institution: 'College of Richard Collyer',
         degree: 'A-Levels in Maths, Geography, Music',
-        period: '2022 – 2023',
+        period: '2022 – 2024',
         description:
             'Developed strong analytical and problem-solving skills while exploring programming fundamentals and building small web projects.',
     },
