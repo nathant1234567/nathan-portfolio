@@ -16,7 +16,7 @@ export default function SocialBox({ className = "" }: SocialBoxProps) {
 
     return (
         <div
-            className={`mt-5  rounded-2xl border border-gray-500 bg-black/10 p-3 flex flex-col items-start gap-4  ${className}`}
+            className={`rounded-2xl border border-gray-500 bg-black/10 p-3 flex flex-col items-start gap-4 ${className}`}
         >
             <div className="flex flex-wrap gap-4">
                 {socials.map(({ name, icon, link }) => (
