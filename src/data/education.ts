@@ -11,7 +11,7 @@ export const educationData: EducationEntry[] = [
         degree: 'BSc Computer Science',
         period: '2024 – 2028',
         description:
-            'Currently pursuing a degree in Computer Science, focusing on software engineering, data structures, and web development. Involved in group projects and AI-related coursework.',
+            'Currently pursuing a degree in Computer Science, focusing on software engineering, data structures, and web development. Involved in group projects and Java related coursework.',
     },
     {
         institution: 'College of Richard Collyer',
@@ -22,9 +22,9 @@ export const educationData: EducationEntry[] = [
     },
     {
         institution: 'Warden Park Secondary Academy',
-        degree: 'GCSEs',
+        degree: '10 GCSEs',
         period: '2017 – 2022',
         description:
-            'Completed GCSEs with focus on STEM subjects and early exposure to computing and technology.',
+            'Completed GCSEs which included Maths, English and Computer Science.',
     },
 ];

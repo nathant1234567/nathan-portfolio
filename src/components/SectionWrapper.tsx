@@ -1,5 +1,7 @@
-export default function SectionWrapper({children, full = false, className = "",}: {
-    children: React.ReactNode;
+import { ReactNode } from "react";
+
+export default function SectionWrapper({ children, full = false, className = "" }: {
+    children: ReactNode;
     full?: boolean;
     className?: string;
 }) {
