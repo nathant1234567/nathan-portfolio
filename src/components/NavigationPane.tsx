@@ -32,7 +32,7 @@ export default function NavigationPane() {
                 <p className="text-xs font-semibold tracking-[0.3em] text-white/60">
                     Navigation :)
                 </p>
-                <ul className="mt-6 space-y-3">
+                <ul className="mt-6 space-y-3 ">
                     {links.map((link) => {
                         const isActive =
                             link.href === "/"
