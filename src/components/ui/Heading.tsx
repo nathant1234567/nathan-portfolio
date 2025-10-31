@@ -65,10 +65,10 @@ export default function Heading() {
     return (
             <SectionWrapper className="pt-40">
                 <div className="flex items-baseline gap-13">
-                    <h1 className="fade text-5xl font-bold cursor-pointer">
+                    <h1 className="fade text-5xl font-bold">
                         <span onMouseEnter={handleHeyMouseEnter}
                               onMouseLeave={handleHeyMouseLeave}
-                              className="inline-block">{showWave ? '👋' : 'Hey'}</span>, I’m <span onMouseEnter={handleMouseEnter}
+                              className="inline-block cursor-help">{showWave ? '👋' : 'Hey'}</span>, I’m <span onMouseEnter={handleMouseEnter}
                                        onMouseLeave={handleMouseLeave} ref={headingRef} className="inline-block">Nathan</span>
                     </h1>
                     <Avatar src="/TempAvatar.png" size={100} border={true} />
