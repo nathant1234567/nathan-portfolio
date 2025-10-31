@@ -2,11 +2,11 @@ import ButtonLink from "@/components/ui/ButtonLink";
 import Heading from "../components/ui/Heading";
 import Socials from "../components/ui/Socials";
 import Education from "@/components/ui/Education";
-import {BlackBackground} from "@/components/layout/BlackBackground";
 import PageWrapper from "@/components/layout/PageWrapper";
 import NavigationPane from "@/components/navigation/NavigationPane";
 import About from "@/components/ui/About";
-
+import HomeProjects from "@/components/ui/HomeProjects";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
@@ -17,9 +17,7 @@ export default function Home() {
                   <About/>
                   <Socials />
                   <Education />
-                  {/*<div className="fade mt-8">*/}
-                  {/*    <ButtonLink href={"/projects"}>View Projects</ButtonLink>*/}
-                  {/*</div>*/}
+                  <HomeProjects/>
               </PageWrapper>
           </main>
           <NavigationPane />
