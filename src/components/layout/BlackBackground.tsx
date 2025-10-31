@@ -17,3 +17,4 @@ export const BlackBackground = ({ children }: { children: React.ReactNode }) => 
 
 // <div className="min-h-screen bg-nice-black text-white ">
 //     {children}
+// className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_15%,rgba(88,154,183,0.12),transparent_55%),radial-gradient(circle_at_80%_10%,rgba(181,131,255,0.2),transparent_40%),radial-gradient(circle_at_50%_85%,rgba(88,166,151,0.8),transparent_65%)] opacity-60"
