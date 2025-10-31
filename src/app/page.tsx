@@ -6,7 +6,7 @@ import PageWrapper from "@/components/layout/PageWrapper";
 import NavigationPane from "@/components/navigation/NavigationPane";
 import About from "@/components/ui/About";
 import HomeProjects from "@/components/ui/HomeProjects";
-import { projects } from "@/data/projects";
+import Footer from "@/components/ui/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +18,7 @@ export default function Home() {
                   <Socials />
                   <Education />
                   <HomeProjects/>
+                  <Footer />
               </PageWrapper>
           </main>
           <NavigationPane />

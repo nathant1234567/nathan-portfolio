@@ -6,6 +6,7 @@ import Education from "@/components/ui/Education";
 import ButtonLink from "@/components/ui/ButtonLink";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import Confetti from 'react-confetti-boom';
+import Footer from "@/components/ui/Footer";
 
 export default function ProjectsPage() {
     return (
@@ -16,6 +17,7 @@ export default function ProjectsPage() {
                         <h1 className="text-4xl font-bold mb-6">Projects</h1>
                         <p className="text-lg leading-relaxed">Will update this page soon.</p>
                     </SectionWrapper>
+                    <Footer />
                 </PageWrapper>
             </main>
             <NavigationPane />
