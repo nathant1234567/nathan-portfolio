@@ -14,14 +14,15 @@ export interface ProjectEntry {
 
 export const projects: ProjectEntry[] = [
     {
-        title: "Example project",
-        summary: "A brief summary of the example project.",
+        title: "Java SQL Warehouse System",
+        summary: "Simple Java Warehouse Management System using SQLite for managing customers, orders, deliveries, and inventory.",
         description:
-            "This is a more detailed description of the example project, explaining its features, purpose, and technologies used.",
-        techStack: ["TypeScript", "React", "Node.js"],
+            "Excerpt from github: This project implements a simple Warehouse Management System for my second COMP5000 assessment. It is a Java application that uses SQLite databases to manage and visualize key business entities including customers, orders, deliveries, and inventory parts. The project demonstrates database integration, object-oriented design, and automated reporting through HTML interfaces..",
+        techStack: ["Java", "SQLite", "InteliJ"],
         featured: true,
         links: [
-            { label: "Test link", href: "https://example.com/" },
+            { label: "Github repo", href: "https://github.com/nathant1234567/warehouse-system-uni" },
         ],
     },
+
 ];
