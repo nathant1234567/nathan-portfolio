@@ -6,8 +6,8 @@
 /*}*/
 
 @theme inline {
-  --font-sans: var(--font-noto-sans);
-  --font-mono: var(--font-noto-sans);
+  --font-sans: var(--font-bitter);
+  --font-mono: var(--font-bitter);
 }
 
 @theme {

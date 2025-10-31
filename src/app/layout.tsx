@@ -12,6 +12,20 @@ const noto = localFont({
     style: "normal",
 });
 
+const bitcount = localFont({
+    src: "../assets/fonts/BitcountGridSingle-VariableFont_CRSV,ELSH,ELXP,slnt,wght.ttf",
+    variable: "--font-bitcount",
+    weight: "100 900",
+    style: "normal",
+});
+
+const bitter = localFont({
+    src: "../assets/fonts/Bitter-VariableFont_wght.ttf",
+    variable: "--font-bitter",
+    weight: "100 900",
+    style: "normal",
+});
+
 export const metadata: Metadata = {
   title: "Nathan Thompson Portfolio",
   description: "My personal portfolio site",
@@ -19,8 +33,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <html lang="en" className={noto.variable}>
-        <body className="font-[var(--font-noto-sans)] bg-black text-white">
+        <html lang="en" className={bitter.variable}>
+        <body className="font-[var(--font-bitter)] bg-black text-white">
         <BlackBackground>{children}</BlackBackground>
         </body>
         </html>

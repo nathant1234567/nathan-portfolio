@@ -1,11 +1,6 @@
 import NavigationPane from "@/components/navigation/NavigationPane";
 import PageWrapper from "@/components/layout/PageWrapper";
-import Heading from "@/components/ui/Heading";
-import Socials from "@/components/ui/Socials";
-import Education from "@/components/ui/Education";
-import ButtonLink from "@/components/ui/ButtonLink";
 import SectionWrapper from "@/components/layout/SectionWrapper";
-import Confetti from 'react-confetti-boom';
 import Footer from "@/components/ui/Footer";
 
 export default function ProjectsPage() {
