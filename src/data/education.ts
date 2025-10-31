@@ -20,11 +20,4 @@ export const educationData: EducationEntry[] = [
         description:
             'Developed strong analytical and problem-solving skills while exploring programming fundamentals and building small web projects.',
     },
-    {
-        institution: 'Warden Park Secondary Academy',
-        degree: '10 GCSEs',
-        period: '2017 – 2022',
-        description:
-            'Completed GCSEs which included Maths, English and Computer Science.',
-    },
 ];
