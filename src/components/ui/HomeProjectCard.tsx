@@ -16,7 +16,7 @@ export default function HomeProjectCard({project}: HomeProjectCardProps) {
                     {project.links.slice(0, 1).map((link) => (
                         <a
                             key={`${project.title}-${link.href}`}
-                            href={link.url}
+                            href={link.href}
                             className="inline-flex items-center gap-2 text-sm font-medium text-teal-200 hover:text-white"
                             target="_blank"
                             rel="noopener noreferrer"
