@@ -14,7 +14,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
                     <div className="max-w-sm space-y-2">
                         <p className="text-sm text-white/70">
-                            Built by me using Next.js, Tailwind CSS and React.
+                            Built by me using React, Next.js and Tailwind CSS (pretty much).
                         </p>
                     </div>
 
