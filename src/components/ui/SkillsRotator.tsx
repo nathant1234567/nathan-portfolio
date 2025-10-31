@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { skills as allSkills } from "@/data/skills";
 
 export default function SkillRotator() {
-    const SKILL_COUNT = 4;
+    const SKILL_COUNT = 3;
 
     const [skills, setSkills] = useState<string[]>(() => allSkills.slice(0, SKILL_COUNT));
 

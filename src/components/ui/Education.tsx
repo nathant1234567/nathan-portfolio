@@ -2,6 +2,8 @@
 import EducationCard from "@/components/ui/EducationCard";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import { educationData } from '@/data/education';
+import { MdSchool } from "react-icons/md";
+import {SectionTitle} from "@/components/layout/SectionTitle";
 
 
 export default function Education() {
@@ -9,7 +11,7 @@ export default function Education() {
     return (
         <SectionWrapper className="w-full max-w-4xl">
 
-            <h2 className="text-4xl font-bold mb-8">Education</h2>
+            <SectionTitle as="h1" title="Education" icon={<MdSchool color={"A4BAB7"} />} />
 
             <div className="flex flex-col gap-4 w-full">
                 {educationData.map((item, index) => (

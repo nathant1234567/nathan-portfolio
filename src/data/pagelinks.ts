@@ -18,7 +18,7 @@ export const pageLinkData: PageLinkEntry[] = [
   },
   {
     label: "Get in touch",
-    href: "mailto:nathantomp@gmail.com",
-    description: "Drop a message if you'd like to collaborate or just say hello.",
+    href: "mailto:nathanthompson256@outlook.com",
+    description: "Drop a message if you'd like to collaborate or just say hello. (opens email)",
   },
 ];

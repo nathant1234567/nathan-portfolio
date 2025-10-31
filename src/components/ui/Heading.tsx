@@ -43,7 +43,7 @@ export default function Heading() {
                     </h1>
                     <Avatar src="/TempAvatar.png" size={100} border={true} />
                 </div>
-                <p className="fade text-3xl mt-7 text-grey-600">Second year student at the University of Kent</p>
+                <p className="fade text-3xl mt-7 text-grey-600">Second year student at the <b>University of Kent</b></p>
                 <SkillRotator/>
             </SectionWrapper>
 

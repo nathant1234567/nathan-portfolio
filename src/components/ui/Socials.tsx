@@ -1,11 +1,13 @@
 'use client';
 import SectionWrapper from "@/components/layout/SectionWrapper";
 import SocialBox from "@/components/ui/SocialBox";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
+import {SectionTitle} from "@/components/layout/SectionTitle";
 
 export default function SocialsSection() {
     return (
         <SectionWrapper className="w-full max-w-4xl">
-            <h1 className="text-4xl font-bold mb-8">Socials</h1>
+            <SectionTitle as="h1" title="Socals" icon={<MdOutlinePhoneAndroid color={"A4BAB7"} />} />
             <SocialBox />
         </SectionWrapper>
     );
