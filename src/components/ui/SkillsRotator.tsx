@@ -5,32 +5,38 @@ import { useEffect, useState } from "react";
 import { skills as allSkills } from "@/data/skills";
 
 export default function SkillRotator() {
-    const getRandomSkills = () =>
-        allSkills.sort(() => 0.5 - Math.random()).slice(0, 4);
+    const SKILL_COUNT = 4;
 
-    const [skills, setSkills] = useState<string[]>(getRandomSkills());
+    const [skills, setSkills] = useState<string[]>(() => allSkills.slice(0, SKILL_COUNT));
 
     useEffect(() => {
         const timers: NodeJS.Timeout[] = [];
 
-        skills.forEach((_, i) => {
-            const updateSkill = () => {
+        const getRandomSkillExcluding = (exclude: string[]) => {
+            let candidate: string;
+            do {
+                candidate = allSkills[Math.floor(Math.random() * allSkills.length)];
+            } while (exclude.includes(candidate));
+            return candidate;
+        };
+
+        const scheduleUpdate = (index: number, delay: number) => {
+            const runUpdate = () => {
                 setSkills((prev) => {
-                    const newSkills = [...prev];
-                    let newWord;
-                    do {
-                        newWord = allSkills[Math.floor(Math.random() * allSkills.length)];
-                    } while (newSkills.includes(newWord));
-                    newSkills[i] = newWord;
-                    return newSkills;
+                    const next = [...prev];
+                    next[index] = getRandomSkillExcluding(next);
+                    return next;
                 });
 
                 const nextDelay = Math.random() * (7000 - 3000) + 3000;
-                timers[i] = setTimeout(updateSkill, nextDelay);
+                timers[index] = setTimeout(runUpdate, nextDelay);
             };
+            timers[index] = setTimeout(runUpdate, delay);
+        };
 
+        Array.from({ length: SKILL_COUNT }, (_, index) => {
             const initialDelay = Math.random() * (7000 - 3000) + 3000;
-            timers[i] = setTimeout(updateSkill, initialDelay);
+            scheduleUpdate(index, initialDelay);
         });
 
         return () => timers.forEach(clearTimeout);

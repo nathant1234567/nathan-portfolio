@@ -8,7 +8,6 @@ import NavigationPane from "@/components/navigation/NavigationPane";
 import About from "@/components/ui/About";
 
 
-
 export default function Home() {
   return (
       <div className="mx-auto flex min-h-screen w-full max-w-7xl flex-col gap-10 px-6 py-0 md:flex-row md:items-start md:gap-16 lg:px-16">

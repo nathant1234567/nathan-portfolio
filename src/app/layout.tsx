@@ -17,13 +17,12 @@ export const metadata: Metadata = {
   description: "My personal portfolio site",
 };
 
-export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
-
-  return (
-      <html lang="en" className={noto.variable}>
-      <body className="font-[var(--font-noto-sans)] bg-black text-white">
-      <BlackBackground><ConditionalPageWrapper>{children}</ConditionalPageWrapper></BlackBackground>
-      </body>
-    </html>
-  );
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+    return (
+        <html lang="en" className={noto.variable}>
+        <body className="font-[var(--font-noto-sans)] bg-black text-white">
+        <BlackBackground>{children}</BlackBackground>
+        </body>
+        </html>
+    );
 }
