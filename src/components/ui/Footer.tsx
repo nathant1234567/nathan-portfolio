@@ -1,16 +1,14 @@
 import Link from "next/link";
 import SectionWrapper from "@/components/layout/SectionWrapper";
 
-
-
 export default function Footer() {
     const year = new Date().getFullYear();
 
     return (
         <SectionWrapper>
         <footer className="mt-3 w-full pb-5">
-            <div className="relative overflow-hidden rounded-3xl border border-gray-600 bg-black/25 px-8 py-4 backdrop-blur">
-                <div className="absolute inset-0  -z-10 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.12),_transparent_100%)]" />
+            <div className="relative overflow-hidden rounded-3xl border border-gray-600 bg-black/10 px-8 py-4 backdrop-blur">
+                <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_left,_rgba(55,119,113,0.25),_transparent_100%)]" />
                 <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
                     <div className="max-w-sm space-y-2">
                         <p className="text-sm text-white/70">
