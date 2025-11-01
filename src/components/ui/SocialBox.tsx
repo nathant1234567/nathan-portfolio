@@ -35,3 +35,25 @@ export default function SocialBox({ className = "" }: SocialBoxProps) {
         </div>
     );
 }
+
+// return (
+//     <div
+//         className={`w-full rounded-2xl border border-gray-500 bg-black/10 p-3 flex flex-col items-stretch gap-4 ${className}`}
+//     >
+//         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+//             {socials.map(({ name, icon, link }) => (
+//                 <a
+//                     key={name}
+//                     href={link}
+//                     target="_blank"
+//                     rel="noopener noreferrer"
+//                     className="flex w-full items-center justify-center gap-2 rounded-lg border border-gray-600 px-4 py-2 transition-colors duration-200 hover:border-white hover:bg-white/10"
+//                 >
+//                     {icon}
+//                     <span>{name}</span>
+//                 </a>
+//             ))}
+//         </div>
+//     </div>
+// );
+// }
