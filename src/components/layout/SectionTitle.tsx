@@ -11,13 +11,7 @@ interface SectionTitleProps {
     iconClassName?: string;
 }
 
-export function SectionTitle({
-                                 title,
-                                 icon,
-                                 as = 'h2',
-                                 className,
-                                 iconClassName,
-                             }: SectionTitleProps) {
+export function SectionTitle({title, icon, as = 'h2', className, iconClassName,}: SectionTitleProps) {
     const Component = as;
 
     return (
