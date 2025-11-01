@@ -45,7 +45,7 @@ export default function SkillRotator() {
     return (
         <div className="text-white/70">
             <p className="pt-2 text-2xl flex flex-wrap gap-x-1">
-                Proficient in{" "}
+                Skilled in{" "}
                 {skills.map((skill, i) => (
                     <AnimatePresence mode="wait" key={i}>
                         <motion.span
