@@ -13,9 +13,9 @@ export default function About() {
             >
                 <div className="flex flex-wrap gap-4 pt-2 pl-2 pb-2">
                     <p>I am a second year BSc Computer Science student based in the South of England, and currently living in {CITY}.</p>
-                    <p>Along with Computer Science, I have been playing drums and piano for over 10 years now, and enjoy practicing whenever I get the opportunity. I specifically like playing along to </p>
+                    <p>Along with Computer Science, I have been playing drums and piano for over 10 years now, and enjoy practicing whenever I get the opportunity. I especially like playing along to 70s rock and funk tracks.</p>
                     <p>The socials that I use the most are linked below; feel free to contact me at any time!</p>
-                    <p>I am constantly improving my website over time, any feedback will be greatly appreciated :) </p>
+                    <p>I am constantly improving my site over time, any feedback will be greatly appreciated :) </p>
                 </div>
             </div>
         </SectionWrapper>
