@@ -7,7 +7,7 @@ export default function SectionWrapper({ children, full = false, className = "" 
 }) {
     return (
         <section
-            className={`${full ? "min-h-screen" : "py-7"} flex flex-col justify-center items-start pl-20 ${className}`}
+            className={`${full ? "min-h-screen" : "py-7"} flex flex-col items-start justify-center px-4 sm:px-10 md:px-12 lg:px-0 lg:pl-20 ${className}`}
         >
             {children}
         </section>
