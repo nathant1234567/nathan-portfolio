@@ -7,7 +7,7 @@ import {SectionTitle} from "@/components/layout/SectionTitle";
 export default function SocialsSection() {
     return (
         <SectionWrapper className="w-full max-w-4xl">
-            <SectionTitle as="h1" title="Socals" icon={<MdOutlinePhoneAndroid color={"A4BAB7"} />} />
+            <SectionTitle as="h1" title="Socials" icon={<MdOutlinePhoneAndroid color={"A4BAB7"} />} />
             <SocialBox />
         </SectionWrapper>
     );
