@@ -19,7 +19,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-1 flex flex-col gap-3 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
                     <p>© {year} Nathan Thompson</p>
-                    <p className="font-mono text-white/50">nathanthompson256@outlook.com</p>
+                    <p className="font-mono text-white/50">hello@nathant.uk</p>
                 </div>
             </div>
         </footer>
